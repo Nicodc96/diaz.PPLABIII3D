@@ -1,0 +1,37 @@
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../images/index.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 150% auto;
+    display:inline;
+    justify-content: center;
+    align-items:center;
+    color: #fff;
+}
+.header-principal{
+    width: 100%;
+    height: 100%;
+    background-color: #378baf;
+}
+.header-principal img{
+    padding: 15px;
+    margin-left: 40%;
+}
+.links-header{
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+}
+#texto-centro{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    background: linear-gradient(to right,#2c5364, #203a43, #0f2027);
+    width: max-content;
+    height: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}

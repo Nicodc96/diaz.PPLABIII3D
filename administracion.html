@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./scripts/app.js" defer type="module"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>PP Lab III - Diaz Lautaro Nicolas</title>
+</head>
+<body>
+    <header class="header-principal">
+        <img src="./images/header.jpg" alt="imgLogo" width="300px" height="175px" style="margin-right: 15px;">
+            <div class="links-header">
+                <a href="./index.html">Pagina principal</a> <a href="./anuncios.html">Anuncios</a> <a href="">Blog</a> <a href="">Contacto</a>
+            </div>
+    </header>
+    <main name="form-principal">
+        <header class="form-header">
+            <h3 id="titulo-admin">Administración</h3>
+            <img src="./images/encabezado.jpg" alt="encabezado" id="imgEncabezado" width="100%" height="300px">
+        </header>        
+        <header class="form-header">            
+            <h3 id="titulo-form">Complete el formulario de alta</h3>
+        </header>
+        <section class="form-container">
+            <form name="anuncios">
+                    <label class="label-form">Titulo:</label>
+                    <div>
+                        <input type="text" name="txtTitulo" placeholder="Titulo" required class="imputText">
+                    </div>
+                    <label class="label-form">Transacción:</label>
+                    <fieldset>
+                        <div>
+                            Venta:<input type="radio" name="rdoTransaccion" value="venta" checked>
+                        </div>
+                        <div>
+                            Alquiler:<input type="radio" name="rdoTransaccion" value="alquiler">
+                        </div>                                      
+                    </fieldset>
+                    <label class="label-form">Descripción:</label>
+                    <div>
+                        <input type="text" name="txtDescripcion" placeholder="Descripcion" required class="imputText">
+                    </div>
+                    <label class="label-form">Precio:</label>
+                    <div>
+                        <input type="number" name="txtPrecio" placeholder="Precio" required class="imputText">
+                    </div>
+                    <div>
+                        <img src="./images/puerta_auto.png" alt="puerta_auto" width="32px" height="32px">
+                        <input type="number" name="txtCantPuertas" placeholder="Puertas" required class="inputCantPuertas" min="2" max="8">
+                    </div>
+                    <div>
+                        <img src="./images/velocimetro.png" alt="kilometros" width="32px" height="32px">
+                        <input type="number" name="txtCantKm" placeholder="KM" required class="inputKm" min="0">
+                    </div>
+                    <div>
+                        <img src="./images/potencia.png" alt="potencia" width="32px" height="32px">
+                        <input type="number" name="txtCantPotencia" placeholder="Potencia" required class="inputCantPotencia" min="0">
+                    </div>
+                    <div id="buttons">
+                        <input type="hidden" name="txtId">
+                        <button id="btnGuardar" value="Guardar">
+                            <img src="./images/guardar.png" alt="potencia" width="24px" height="24px"> Guardar
+                        </button>
+                        <input type="button" value="Eliminar" id="btnEliminar">
+                        <input type="button" value="Cancelar" id="btnCancelar">
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <main class="main-entidad">
+        <header class="entidad-header">
+            <h3 id="titulo-entidad">Listado de Vehiculos</h3>
+        </header>
+        <section class="entidad-container">
+            <div id="lista-entidades"></div>
+        </section>
+    </main>
+</body>
+</html>
